@@ -1,6 +1,6 @@
 print("bem vindo ao gerenciador de estudos")
-horasPorDia = int(input("Digite quantas Horas você estuda por dia util: "))
-validaFimSem = int(input("Estuda final de semana? 1)sim 2)não: "))
+horasPorDia = int(input("Digite quantas Horas vocÃª estuda por dia util: "))
+validaFimSem = int(input("Estuda final de semana? 1)sim 2)nÃ£o: "))
 result = True if validaFimSem == 1 else False;
 if result:
   horasFimDeSemana = int(input("Digite quantas horas estuda por semana: "))
