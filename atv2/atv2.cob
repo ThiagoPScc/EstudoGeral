@@ -1,0 +1,29 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO-WORLD.
+DATA DIVISION.
+    WORKING-STORAGE SECTION.
+        77 HORAS PIC 99.
+        77 HORASFIM PIC 99.
+        77 HORASTOTAL PIC 99.
+        77 VALIDA PIC 99.
+        77 TEMP PIC 99.
+        77 TEMP2 PIC 99.
+PROCEDURE DIVISION.
+    DISPLAY "Digite a quantidade de horas que estuda por semana:"WITH NO ADVANCING.
+    ACCEPT HORAS.
+    DISPLAY "Você estuda final de semana? 1)sim 2)não" WITH NO ADVANCING.
+    ACCEPT VALIDA.
+    IF VALIDA = 1
+        DISPLAY "Digite quantas horas você estuda no final de semana:"
+        ACCEPT HORASFIM
+        MULTIPLY HORAS BY 22 GIVING TEMP
+        MULTIPLY HORASFIM BY 8 GIVING TEMP2
+        ADD TEMP TO TEMP2 GIVING HORASTOTAL
+        DISPLAY HORASTOTAL
+    ELSE
+        MULTIPLY HORAS BY 22 GIVING HORASTOTAL
+        DISPLAY HORASTOTAL
+    END-IF.
+        
+        
+STOP RUN.
